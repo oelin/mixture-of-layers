@@ -1,4 +1,4 @@
-"""LayerRouter."""
+"""LayerRouter v1."""
 
 from typing import Tuple
 
@@ -137,6 +137,9 @@ class LayerRouter(nn.Module):
         x : torch.Tensor
             The output tensor (B, T, E).
         """
+
+        # TODO: refactoring required to avoid nested for-loop.
+        # TODO: implement token-wise layer selection rather than sequence-wise.
 
         for step in torch.arange(self.steps):
 
