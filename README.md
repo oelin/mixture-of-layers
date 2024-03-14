@@ -1,4 +1,4 @@
-# mixture-of-layers
+# Mixture of Layers
 
 An implementation of Mixture of Layers (MoL) in PyTorch. We propose a method for neural networks to route information dynamically through their layers in an *arbitrary order*, allowing for in-context parameter tying.
 
