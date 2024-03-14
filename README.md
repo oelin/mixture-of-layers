@@ -12,4 +12,4 @@ $$
     f(\mathbf{x}_t, t) = (g(\mathbf{x}_t, t), h(\mathbf{x}_t, t)),
 $$ 
 
-where $g(\mathbf{x}_t, t)$ returns a distribution over subsequent layer indices and $h(\mathbf{x}_t, t)$ is an arbitrary transformation on $\mathbf{x}_t$. The subsequent layer index is chosen as $\text{argmax}\, g(\mathbf{x}_t, t)$. Then, $h(\mathbf{x}_t, t)$ is given to it as input.
+where $g(\mathbf{x}_t, t)$ returns a distribution over subsequent layer indices and $h(\mathbf{x}_t, t)$ is an arbitrary transformation on $\mathbf{x}_t$. The subsequent layer index is chosen as $\text{argmax}\, g(\mathbf{x}_t, t)$. Then, $h(\mathbf{x}_t, t)$ is forwarded through it.
